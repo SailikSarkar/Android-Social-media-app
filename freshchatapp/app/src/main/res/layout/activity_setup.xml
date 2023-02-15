@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SetupActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/mans" />
+
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+
+        android:layout_alignStart="@+id/setup_profile_image"
+        android:layout_alignEnd="@+id/setup_profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-35dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="-34dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="    Enter username "
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/setup_country_name"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+
+        android:layout_alignStart="@+id/setup_full_name"
+
+        android:layout_alignEnd="@+id/setup_full_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/country"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="    Enter your country"
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/setup_full_name"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+
+        android:layout_alignStart="@+id/setup_username"
+        android:layout_alignEnd="@+id/setup_username"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="379dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="    Enter full lname"
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/setup_information_button"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setup_country_name"
+        android:layout_alignEnd="@+id/setup_country_name"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="SAVE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PostActivity">
+
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout"
+        android:background="@color/ash" />
+
+    <ImageButton
+        android:id="@+id/select_post_image"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/addimage" />
+
+    <EditText
+        android:id="@+id/post_desctiption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_post_image"
+        android:layout_alignStart="@+id/select_post_image"
+        android:layout_alignEnd="@+id/select_post_image"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="6dp"
+
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="-6dp"
+        android:background="@drawable/buttonborder"
+        android:ems="10"
+        android:gravity="start|top"
+        android:textColorHint="@color/white"
+        android:hint="Write something about the image ......"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/update_post_button"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/post_desctiption"
+        android:layout_alignStart="@+id/post_desctiption"
+        android:layout_alignEnd="@+id/post_desctiption"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="39dp"
+
+
+        android:layout_marginEnd="144dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#D63C3C"
+        android:padding="20dp"
+        android:text="UPDATE POST"
+        app:iconPadding="15dp"
+        app:iconTint="#000000" />
+
+</RelativeLayout>

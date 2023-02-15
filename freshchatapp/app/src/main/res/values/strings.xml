@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">freshchatapp</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_Close">Drawer Close</string>
+</resources>

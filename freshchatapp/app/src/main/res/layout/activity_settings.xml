@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/settings_toolbar"
+
+        layout="@layout/app_bar_layout"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settings_toolbar"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/settings_profile_image"
+                android:layout_width="271dp"
+                android:layout_height="243dp"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="84dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="59dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/profile" />
+
+            <EditText
+                android:id="@+id/settings_fullname"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_profile_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="58dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/fullnameee"
+                android:drawablePadding="15dp"
+                android:hint="FULL NAME"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="20dp"
+
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_status"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_fullname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/statusas"
+                android:drawablePadding="15dp"
+                android:hint="STATUS"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_username"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_status"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="55dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="15dp"
+                android:hint="USER NAME"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_dob"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/birthday"
+                android:drawablePadding="15dp"
+                android:hint="DATE OF BIRTH"
+                android:inputType="date"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_gender"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_dob"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/sex"
+                android:drawablePadding="15dp"
+                android:hint="GENDER"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_relationship"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_gender"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/relationship"
+                android:drawablePadding="15dp"
+                android:hint="RELATIONSHIP STATUS"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/settings_country"
+                android:layout_width="367dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/settings_relationship"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview_back"
+                android:drawableLeft="@drawable/coronavirus"
+                android:drawablePadding="15dp"
+                android:hint="COUNTRY"
+                android:padding="15dp"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/settings_update_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_country"
+                android:layout_alignStart="@+id/settings_country"
+
+                android:layout_alignEnd="@+id/settings_country"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="41dp"
+
+
+                android:layout_marginEnd="81dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/updated"
+                android:padding="25dp"
+                android:text="UPDATE "
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+

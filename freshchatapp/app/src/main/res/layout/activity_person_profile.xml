@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonProfileActivity"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile_pic"
+                android:layout_width="230dp"
+                android:layout_height="305dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/person_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_pic"
+                android:paddingTop="10dp"
+                android:shadowColor="@color/black"
+                android:text="profile_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/person_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_full_name"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="10dp"
+                android:text="username"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/person_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="50dp"
+
+                android:paddingTop="10dp"
+                android:shadowColor="@color/white"
+
+
+                android:text="status"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/person_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_status"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:shadowColor="@color/white"
+                android:text="Country"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+
+                android:textSize="14sp" />
+            />
+
+            <TextView
+                android:id="@+id/person_profile_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_country"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:shadowColor="@color/white"
+                android:text="DOB"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/person_profile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_dob"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:shadowColor="@color/white"
+                android:text="Gender"
+
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/person_relationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_gender"
+                android:paddingTop="10dp"
+                android:shadowColor="@color/white"
+                android:text="Relationship"
+                android:textAlignment="center"
+
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+
+                />
+
+
+            <Button
+                android:id="@+id/person_add_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send freind request"
+                android:layout_below="@id/person_relationship"
+                android:layout_marginTop="8dp"
+
+
+                />
+
+            <Button
+                android:id="@+id/person_cancel_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel freind request"
+                android:layout_below="@id/person_add_friend"
+                android:layout_marginTop="8dp"
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

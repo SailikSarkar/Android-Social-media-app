@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@drawable/searchresults">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/all_user_pro_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/all_user_profilefullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user full name"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/all_user_statussearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="user full name"
+            android:textAlignment="textStart"
+
+            android:layout_marginTop="5dp"
+            android:textColor="@color/ash"
+            android:textSize="16dp"
+
+
+            android:textStyle="normal" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
